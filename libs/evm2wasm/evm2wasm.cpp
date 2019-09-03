@@ -601,6 +601,8 @@ std::string opcodeToString(opcodeEnum opcode)
         return "DELEGATECALL";
     case opcodeEnum::SELFDESTRUCT:
         return "SELFDESTRUCT";
+        case opcodeEnum::REVERT:
+            return "REVERT";
     default:
         abort();
     }
